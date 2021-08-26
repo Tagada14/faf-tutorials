@@ -150,7 +150,7 @@ function StartBuildOrder(skipZoom)
     -- Disallow orders
     Sync.NoOrdersAllowed = true
 
-    -- Switch Army veiw
+    -- Switch Army view
     Utilities.UserConRequest('SetFocusArmy 1')
 
     if not skipZoom then
