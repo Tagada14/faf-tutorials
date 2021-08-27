@@ -30,6 +30,9 @@ Scenario = {
         ['Reclaim_Area_1'] = {
             ['rectangle'] = RECTANGLE( 157.5, 28.5, 183.5, 48.5 ),
         },
+        ['New Area'] = {
+            ['rectangle'] = RECTANGLE( 0, 0, 256, 256 ),
+        },
     },
     --[[                                                                           ]]--
     --[[  Markers                                                                  ]]--
