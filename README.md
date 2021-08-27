@@ -7,7 +7,14 @@ Google document: https://docs.google.com/document/d/1dZShYfOeiSvRSTmQZ6G3rHPZ0Ud
 ## Testing
 
 * Put `init_tutorials.lua` into `C:\ProgramData\FAForever\bin`
-* Open it and change this line https://github.com/speed2CZ/faf-tutorials/blob/master/init_tutorials.lua#L92 to point at the tutorial repo on your computer
+* Open it and and locate this line:
+```LUA
+mount_dir(InitFileDir .. '\\..\\gamedata\\*.tut', '/')
+```
+* It's telling the game where to load the tutorial mod from. You want to point it to your local git repo.(In the example below the repo is `Documents\GitHub\faf-tutorials`)
+```LUA
+mount_dir(SHGetFolderPath('PERSONAL') .. 'GitHub\\faf-tutorials', '/')
+```
 * Launch `C:\ProgramData\FAForever\bin\ForgedAlliance.exe` with `/init init_tutorials.lua` go to skirmish, select map and launch
 * You might need to edit `LastScenario` in your `game.prefs (C:\Users\%USERNAME%\AppData\Local\Gas Powered Games\Supreme Commander Forged Alliance)` to `FAF_TUT_Theta_BO` if the lobby bugs out since the mod doesn't default on this map yet.
 
