@@ -83,53 +83,63 @@ function MapIntro()
 
     -- Initial Camera
     ScenarioFramework.Dialogue(OpStrings.MapInfo, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Init'), 15)
-    WaitSeconds(9)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 15)
+    WaitSeconds(5)
 
     -- Starting Position
     ScenarioFramework.Dialogue(OpStrings.StartPosition, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Starting_Position'), 4)
-    WaitSeconds(10)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_StartPosition'), 4)
+    WaitSeconds(5)
 
     -- Reclaim near base
-    ScenarioFramework.Dialogue(OpStrings.ReclaimNearBase, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_ReclaimNearBase'), 3)
+    ScenarioFramework.Dialogue(OpStrings.TwoMexHydro, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexHydro'), 3)
     WaitSeconds(3)
 
     -- Reclaim in middle
-    ScenarioFramework.Dialogue(OpStrings.ReclaimMiddle, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Mid_Reclaim'), 3)
+    ScenarioFramework.Dialogue(OpStrings.ReclaimNearBase, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_ReclaimNearBase'), 3)
     WaitSeconds(4)
 
     -- Civ buildings
-    ScenarioFramework.Dialogue(OpStrings.MiddleWrecks, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Mid_Civs'), 2)
-    WaitSeconds(4)
+    ScenarioFramework.Dialogue(OpStrings.FirstMainExpansion, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_FirstMainExpansion'), 3)
+    WaitSeconds(7)
 
     -- More info about middle pass
-    ScenarioFramework.Dialogue(OpStrings.InfoAboutMiddle, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Middle_Pass'), 4)
-    WaitSeconds(4)
+    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToFirstExpansion, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexNextToFirstMainExpansion'), 4)
+    WaitSeconds(5)
 
     -- Bottom Pass
-    ScenarioFramework.Dialogue(OpStrings.BottomPassage, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_South_Pass'), 4)
-    WaitSeconds(8)
+    ScenarioFramework.Dialogue(OpStrings.ThreeMexBehindBase, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_3MexBehindBase'), 7)
+    WaitSeconds(5)
 
     -- North Area 
-    ScenarioFramework.Dialogue(OpStrings.NorthPart, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Main'), 6)
-    WaitSeconds(5)
+    ScenarioFramework.Dialogue(OpStrings.SecondMainExpansion, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_SecondMainExpansion'), 7)
+    WaitSeconds(7)
 
     -- North Mexes
-    ScenarioFramework.Dialogue(OpStrings.NorthPlateau, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Top_Expansion'), 3)
-    WaitSeconds(8)
+    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondExpansion, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_TwoMexNextToSecondMainExpansion'), 4)
+    WaitSeconds(5)
 
     -- Final words
-    ScenarioFramework.Dialogue(OpStrings.NorthPlateau2, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Mid_Final'), 5)
+    ScenarioFramework.Dialogue(OpStrings.Middle, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Middle'), 7)
     WaitSeconds(5)
+
+        -- Move to Starting position
+    ScenarioFramework.Dialogue(OpStrings.EnemyBase, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_EnemyStartPosition'), 7)
+    WaitSeconds(4)
+
+    -- Move to Starting position
+    ScenarioFramework.Dialogue(OpStrings.WholeMap, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 7)
+    WaitSeconds(8)
 
     -- Move to Starting position
     ScenarioFramework.Dialogue(OpStrings.StartBuildOrder, nil, true)
@@ -161,12 +171,13 @@ function StartBuildOrder(skipZoom)
     tManager:SetEngineersOrders({
         ACU = {
             {build = '1_ACU_Build'}, -- groupName OR {unitName1, unitName2, ...}, if there's a marker with the same name as the building, move order will be issued first
-            {assist = {'Engineer', 1}}, -- {type, number}
-            {wait = {'Units_Active', 2, categories.ueb0101}},
-            {build = {'Mex_Middle'}},
-            {reclaim = {area = 'Reclaim_Middle', moveChain = 'Move_Chain_Middle', minMass = 5}},
-            {move = 'ACU_Final_Position'},
+            --{assist = {'Engineer', 1}}, -- {type, number}
+            --{wait = {'Units_Active', 2, categories.ueb0101}},
+            --{build = {'Mex_Middle'}},
+            --{reclaim = {area = 'Reclaim_Middle', moveChain = 'Move_Chain_Middle', minMass = 5}},
+            {move = 'ACU_Move_To_Hydro'},
         },
+        --[[
         Engineers = {
             { -- Engineer 1
                 {build = '1_Engineer_Build'},
@@ -196,9 +207,11 @@ function StartBuildOrder(skipZoom)
                 {attackmove = 'Engineer_6_AttackMove_Chain'},
             },
         },
+        ]]--
     })
 
     tManager:SetFactoriesQueue({
+        --[[
         Land = {
             { -- Factory 1
                 { -- Order 1
@@ -242,9 +255,11 @@ function StartBuildOrder(skipZoom)
                 },
             },
         },
+        ]]--
     })
 
     tManager:SetAttackGroups({
+        --[[
         { -- Attack Group 1
             units = {{'uel0201', 1}},
             orders = {
@@ -281,9 +296,11 @@ function StartBuildOrder(skipZoom)
                 {move = 'Attack_Group_6_Move'}
             },
         },
+        ]]--
     })
 
     tManager:SetVoiceOvers(OpStrings, {
+        --[[
         LandFirst = 'Start',
         FirstEngineer = 'Engineer1',
         NorthEngineer = 'Engineer2',
@@ -294,6 +311,7 @@ function StartBuildOrder(skipZoom)
         ACUMiddle = {'Units_Active', 9, categories.ueb1103},
         MiddleRadar = 'Engineer6',
         EndBuildOrder = {'Units_Active', 4, categories.ueb0101, SpawnPlayer},
+        ]]--
     })
 
     tManager:Initialize()
