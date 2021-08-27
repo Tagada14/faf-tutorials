@@ -107,7 +107,7 @@ function MapIntro()
     WaitSeconds(7)
 
     -- More info about middle pass
-    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToFirstExpansion, nil, true)
+    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToFirstMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexNextToFirstMainExpansion'), 4)
     WaitSeconds(5)
 
@@ -122,7 +122,7 @@ function MapIntro()
     WaitSeconds(7)
 
     -- North Mexes
-    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondExpansion, nil, true)
+    ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_TwoMexNextToSecondMainExpansion'), 4)
     WaitSeconds(5)
 
@@ -171,77 +171,116 @@ function StartBuildOrder(skipZoom)
     tManager:SetEngineersOrders({
         ACU = {
             {build = '1_ACU_Build'}, -- groupName OR {unitName1, unitName2, ...}, if there's a marker with the same name as the building, move order will be issued first
-            --{assist = {'Engineer', 1}}, -- {type, number}
-            --{wait = {'Units_Active', 2, categories.ueb0101}},
-            --{build = {'Mex_Middle'}},
-            --{reclaim = {area = 'Reclaim_Middle', moveChain = 'Move_Chain_Middle', minMass = 5}},
             {move = 'ACU_Move_To_Hydro'},
+            {assist = {'Engineer', 1}}, -- {type, number}
+            {wait = {'Units_Active', 1, categories.ueb0102}},
+            {build = '2_ACU_Build'},
+            {move = 'ACU_Move_To_Hydro2'},
+            {assist = {'Engineer', 7}},
+            {wait = {'Units_Active', 2, categories.ueb1102}},
+            {move = 'ACU_Move_To_FirstMainExpansion'},
+            --{reclaim = {area = 'Reclaim_Middle', moveChain = 'Move_Chain_Middle', minMass = 5}},
+            
         },
-        --[[
+        
         Engineers = {
             { -- Engineer 1
                 {build = '1_Engineer_Build'},
+                {wait = {'Units_Active', 6, categories.ueb0101}},
+                {build = 'FactorySpam'},
             },
+
             { -- Engineer 2
-                {reclaim = {simpleChainFigure = 'Reclaim_Chain_1', moveChain = 'Move_Chain_1', minMass = 5}},
-                {build = {'1_North_Mex', '2_North_Mex'}},
-                {reclaim = {simpleChainFigure = 'Reclaim_Chain_3', moveChain = 'Move_Chain_3', minMass = 5}},
-                {build = {'3_North_Mex', '4_North_Mex', '5_North_Mex'}},
-                {build = 'Walls_North'},
-                {build = 'PD_North'},
-                {build = {'Radar_North'}},
-                {move = 'North_Engie_Hide'},
+                {assist = {'Engineer', 1}},
             },
+
             { -- Engineer 3
-                {build = 'South_Expansion'},
-                {attackmove = 'South_Engineer_AttackMove_Chain'},
+                {reclaim = {area = 'Reclaim_MainBase', moveChain = 'Move_Chain_Reclaim_MainBase', minMass = 5}},
+                {build = 'SecondMainExpansion'},
             },
+
             { -- Engineer 4
-                {assist = {'Engineer', 1}},
+                {build = 'TwoMexHydro_Left_Mex'},
+                {reclaim = {area = 'Reclaim_NextToBase', moveChain = 'Move_Chain_Reclaim_NextToBase', minMass = 5}},
+                {build = 'BackExpansion'},
             },
+
             { -- Engineer 5
-                {assist = {'Engineer', 1}},
+                {build = 'FirstMainExpansion'},
             },
+
             { -- Engineer 6
-                {build = {'Radar_Middle'}},
-                {attackmove = 'Engineer_6_AttackMove_Chain'},
+                {build = 'TwoMexNextToFirstMainExpansion'},
+
             },
+
+            { -- Engineer 7
+                {build = 'HydroFirstMainExpansion'},
+                
+            },
+
+            { -- Engineer 8
+                {build = 'TwoMexNextToSecondMainExpansion'},
+                
+            },
+
+            { -- Engineer 9
+                {assist = {'Engineer', 1}},
+                
+            },
+
+            { -- Engineer 10
+                {build = 'PowerSpam'},
+                
+            },
+
+            { -- Engineer 11
+                {assist = {'Engineer', 10}},
+                
+            },
+
+            { -- Engineer 12
+                {build = 'Middle'},
+                
+            },
+
+            { -- Engineer 13
+                {assist = {'Engineer', 1}},
+                
+            },
+
         },
-        ]]--
+        
     })
 
     tManager:SetFactoriesQueue({
-        --[[
+        
         Land = {
             { -- Factory 1
                 { -- Order 1
                     build = {
                         {'uel0105', 3},
-                        {'uel0201', 2},
-                        {'uel0101', 2},
-                        {'uel0105', 2},
-                        {'uel0201', 2},
+                        {'uel0201', 1},
                         {'uel0101', 1},
-                        {'uel0105', 2},
-                        {'uel0201', 2},
+                        {'uel0105', 1},
+                        {'uel0201', 1},
                         {'uel0101', 1},
+                        {'uel0105', 50},
+                        
                     },
                     RallyPoint = 'Fac_1_Rally',
+                    RepeatBuild = true,
                 },
             },
             { -- Factory 2
                 { -- Order 1
                     build = {
-                        {'uel0201', 5},
+                        {'uel0201', 1},
                         {'uel0101', 1},
+                        {'uel0201', 5},
                     },
                     RallyPoint = 'Fac_2_Rally',
                     RepeatBuild = true,
-                },
-            },
-            { -- Factory 3
-                { -- Order 1
-                    assist = 2,
                 },
             },
             { -- Factory 4
@@ -254,64 +293,136 @@ function StartBuildOrder(skipZoom)
                     assist = 2,
                 },
             },
+            { -- Factory 6
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+            { -- Factory 7 (FirstMainExpansion)
+                { -- Order 1
+                    build = {
+                        {'uel0105', 10},
+                    },
+                    RallyPoint = 'FirstMainExpansionFactory_RallyPoint',
+                },
+            },
+            { -- Factory 8
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+            { -- Factory 9
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+            { -- Factory 10
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+            { -- Factory 11
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+
+            { -- Factory 12
+                { -- Order 1
+                    assist = 2,
+                },
+            },
+
+            { -- Factory 13 (Back three mexes)
+                { -- Order 1
+                    build = {
+                        {'uel0105', 10},
+                    },
+                    RallyPoint = 'BackThreeMexFactory_Rallypoint',
+                },
+            },
         },
-        ]]--
+    
+
+        Air = {
+            { -- Factory 3
+                { -- Order 1
+                    build = {
+                        {'uea0101', 1},
+                        {'uea0102', 3},    
+                    },
+                    RallyPoint = 'AirFac_3_Rally',
+                    RepeatBuild = true,
+                },
+            },       
+
+        },
     })
 
     tManager:SetAttackGroups({
-        --[[
+        
         { -- Attack Group 1
             units = {{'uel0201', 1}},
             orders = {
-                {move = 'North_Attack_1'},
+                {assist = {'Engineer', 3}},
             },
         },
         { -- Attack Group 2
-            units = {{'uel0201', 1}},
-            orders = {
-                {move = 'South_Attack_Chain'},
-            },
-        },
-        { -- Attack Group 3
             units = {{'uel0101', 1}},
             orders = {
                 {assist = {'AttackGroup', 1}},
             },
         },
+        { -- Attack Group 3
+            units = {{'uel0201', 1}},
+            orders = {
+                {assist = {'Engineer', 4}},
+            },
+        },
         { -- Attack Group 4
             units = {{'uel0101', 1}},
             orders = {
-                {assist = {'AttackGroup', 2}},
+                {assist = {'AttackGroup', 3}},
             },
         },
+        
         { -- Attack Group 5
-            units = {{'uel0201', 3}},
+            units = {{'uel0201', 2}, {'uel0101', 1}},
             orders = {
-                {move = 'Attack_Group_5_Move'}
+                {move = 'Move_Chain_Attack_Group_5'}
             },
         },
         { -- Attack Group 6
-            units = {{'uel0201', 4}, {'uel0101', 2}},
+            units = {{'uel0201', 4}, {'uel0101', 1}},
             orders = {
-                {move = 'Attack_Group_6_Move'}
+                {move = 'Move_Chain_Attack_Group_6'}
             },
         },
-        ]]--
+        
     })
 
     tManager:SetVoiceOvers(OpStrings, {
-        --[[
+        
         LandFirst = 'Start',
         FirstEngineer = 'Engineer1',
-        NorthEngineer = 'Engineer2',
-        SouthEngineer = 'Engineer3',
-        Raids = 'AttackGroup1',
+        SecondEngineer = 'Engineer2',
+        ThirdEngineer = 'Engineer3',
+        TankScout1 = 'AttackGroup2',
+        FourthEngineer = 'Engineer4',
+        TankScout2 = 'AttackGroup4',
         SecondFactory = 'LandFactory2',
+        FithEngineer = 'Engineer5',
+        AirFactoryAndACUMoveOut = 'AirFactory1', 
         MoreTanks = 'AttackGroup5',
-        ACUMiddle = {'Units_Active', 9, categories.ueb1103},
-        MiddleRadar = 'Engineer6',
-        EndBuildOrder = {'Units_Active', 4, categories.ueb0101, SpawnPlayer},
-        ]]--
+        SixthEngineer = 'Engineer6',
+        FactorySpam = 'LandFactory3',
+        SeventhEngineer = 'Engineer7',
+        EighthEngineer = 'Engineer8',
+        PowerAndFactorySpam = 'Engineer9',
+        MiddleExpansion = 'Engineer12',
+        ACUMovement = {'Units_Active', 2, categories.ueb1102},
+        FollowUp = {'Units_Active', 6, categories.ueb0101},
+        EndBuildOrder = {'Units_Active', 7, categories.ueb0101, SpawnPlayer},
     })
 
     tManager:Initialize()
