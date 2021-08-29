@@ -15,11 +15,11 @@ Scenario = {
     --[[  Areas                                                                    ]]--
     --[[                                                                           ]]--
     Areas = {
-        ['Reclaim_MainBase'] = {
-            ['rectangle'] = RECTANGLE( 190, 137, 205, 155 ),
-        },
         ['AI_Start'] = {
             ['rectangle'] = RECTANGLE( 100, 90, 190, 180 ),
+        },
+        ['Reclaim_MainBase'] = {
+            ['rectangle'] = RECTANGLE( 190, 137, 205, 155 ),
         },
         ['Reclaim_NextToBase'] = {
             ['rectangle'] = RECTANGLE( 90, 170, 135, 202 ),
@@ -312,16 +312,6 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 170.5, 15.1152, 419.5 ),
                 },
-                ['Cam_MapInfo'] = {
-                    ['color'] = STRING( 'ff808000' ),
-                    ['type'] = STRING( 'Camera Info' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['zoom'] = FLOAT( 674.892000 ),
-                    ['canSetCamera'] = BOOLEAN( true ),
-                    ['canSyncCamera'] = BOOLEAN( true ),
-                    ['orientation'] = VECTOR3( -3.141593, 1.570796, 0 ),
-                    ['position'] = VECTOR3( 297.2287, 19.99341, 244.9865 ),
-                },
                 ['MASS_342'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
@@ -597,17 +587,6 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 138.5, 15.31343, 260.5 ),
                 },
-                ['MASS_339'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 471.5, 15.3125, 492.5 ),
-                },
                 ['MASS_316'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
@@ -729,6 +708,32 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 198.5, 15.3125, 374.5 ),
                 },
+                ['Fac_2_Rally_2'] = {
+                    ['color'] = STRING( 'FF808000' ),
+                    ['hint'] = BOOLEAN( true ),
+                    ['type'] = STRING( 'Rally Point' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 195.5, 15.22749, 191.5 ),
+                },
+                ['ACU_Move_To_Hydro2'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 150.5, 15.31343, 286.5 ),
+                },
+                ['MASS_294'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 320.5, 15.3105, 91.5 ),
+                },
                 ['MASS_287'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
@@ -740,26 +745,30 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 141.5, 14.8203, 120.5 ),
                 },
-                ['7_Move_Patrol_Chain_Attack_Group_7'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                ['MASS_345'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 174.5, 15.20405, 198.5 ),
+                    ['position'] = VECTOR3( 306.5, 19.9219, 228.5 ),
                 },
-                ['6_Move_Patrol_Chain_Attack_Group_7'] = {
+                ['1_Move_Chain_Attack_Group_6'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 321.5, 15.31343, 150.5 ),
+                    ['position'] = VECTOR3( 300.5, 15.31343, 135.5 ),
                 },
-                ['5_Move_Patrol_Chain_Attack_Group_7'] = {
+                ['2_Move_Chain_Attack_Group_6'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 390.5, 15.31343, 233.5 ),
+                    ['position'] = VECTOR3( 414.5, 15.31343, 227.5 ),
                 },
                 ['4_Move_Patrol_Chain_Attack_Group_7'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -793,12 +802,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 330.5, 15.3125, 99.5 ),
                 },
-                ['1_Move_Patrol_Chain_Attack_Group_7'] = {
+                ['1_Mex_TwoMexHydro_Left_Mex'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 148.5, 15.31343, 329.5 ),
+                    ['position'] = VECTOR3( 160.5, 14.8134, 179.5 ),
                 },
                 ['Cam_Middle'] = {
                     ['color'] = STRING( 'ff808000' ),
@@ -849,25 +858,23 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 42.5, 15.3125, 30.5 ),
                 },
-                ['HYDROCARBON_276'] = {
-                    ['size'] = FLOAT( 3.000000 ),
+                ['7_Mex_SecondMainExpansion'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 326.5, 15.2939, 90.5 ),
+                },
+                ['Mass 05'] = {
+                    ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff008000' ),
-                    ['type'] = STRING( 'Hydrocarbon' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Hydrocarbon_prop.bp' ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 383.5, 15.3125, 219.5 ),
-                },
-                ['Cam_2MexHydro'] = {
-                    ['color'] = STRING( 'ff808000' ),
-                    ['type'] = STRING( 'Camera Info' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['zoom'] = FLOAT( 110.988900 ),
-                    ['canSetCamera'] = BOOLEAN( true ),
-                    ['canSyncCamera'] = BOOLEAN( true ),
-                    ['orientation'] = VECTOR3( -2.824623, 0.836497, 0 ),
-                    ['position'] = VECTOR3( 191.7683, 15.086, 171.8174 ),
+                    ['position'] = VECTOR3( 427.5, 20.3633, 81.5 ),
                 },
                 ['ACU_Move_To_Hydro'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -887,7 +894,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 84.5, 20.3594, 427.5 ),
                 },
-                ['MASS_348'] = {
+                ['MASS_305'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -896,14 +903,18 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 225.5, 19.9766, 266.5 ),
+                    ['position'] = VECTOR3( 103.5, 15.3125, 282.5 ),
                 },
-                ['1_Reclaim_NextToBase'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                ['MASS_296'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 133.5, 14.84466, 187.5 ),
+                    ['position'] = VECTOR3( 331.5, 15.002, 82.5 ),
                 },
                 ['Mass 06'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -981,23 +992,22 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 357.5, 15.3125, 218.5 ),
                 },
-                ['4_Mex_SecondMainExpansion'] = {
+                ['Cam_StartPosition'] = {
+                    ['color'] = STRING( 'ff808000' ),
+                    ['type'] = STRING( 'Camera Info' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['zoom'] = FLOAT( 160.730500 ),
+                    ['canSetCamera'] = BOOLEAN( true ),
+                    ['canSyncCamera'] = BOOLEAN( true ),
+                    ['orientation'] = VECTOR3( -2.590372, 0.595636, 0 ),
+                    ['position'] = VECTOR3( 153.7083, 14.83685, 136.5057 ),
+                },
+                ['Move_Middle_Attack_Group_8'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 324.5, 15.31343, 100.5 ),
-                },
-                ['MASS_286'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 130.5, 14.8184, 120.5 ),
+                    ['position'] = VECTOR3( 276.5, 19.96606, 251.5 ),
                 },
                 ['MASS_302'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1038,7 +1048,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( -2.83578, 0.863584, 0 ),
                     ['position'] = VECTOR3( 41.39056, 15.31343, 40.26085 ),
                 },
-                ['Mass 00'] = {
+                ['MASS_323'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1047,7 +1057,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 235.5, 19.9824, 278.5 ),
+                    ['position'] = VECTOR3( 295.5, 15.3125, 134.5 ),
                 },
                 ['MASS_321'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1090,7 +1100,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 194.5, 15.14546, 184.5 ),
                 },
-                ['MASS_323'] = {
+                ['Mass 00'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1099,7 +1109,7 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 295.5, 15.3125, 134.5 ),
+                    ['position'] = VECTOR3( 235.5, 19.9824, 278.5 ),
                 },
                 ['HYDROCARBON_278'] = {
                     ['size'] = FLOAT( 3.000000 ),
@@ -1111,22 +1121,23 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 137.5, 15.3125, 290.5 ),
                 },
-                ['ACU_Move_To_Hydro2'] = {
+                ['MASS_286'] = {
+                    ['size'] = FLOAT( 1.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff808080' ),
+                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
+                    ['type'] = STRING( 'Mass' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 130.5, 14.8184, 120.5 ),
+                },
+                ['4_Mex_SecondMainExpansion'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 150.5, 15.31343, 286.5 ),
-                },
-                ['Cam_StartPosition'] = {
-                    ['color'] = STRING( 'ff808000' ),
-                    ['type'] = STRING( 'Camera Info' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['zoom'] = FLOAT( 160.730500 ),
-                    ['canSetCamera'] = BOOLEAN( true ),
-                    ['canSyncCamera'] = BOOLEAN( true ),
-                    ['orientation'] = VECTOR3( -2.590372, 0.595636, 0 ),
-                    ['position'] = VECTOR3( 153.7083, 14.83685, 136.5057 ),
+                    ['position'] = VECTOR3( 324.5, 15.31343, 100.5 ),
                 },
                 ['MASS_295'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1160,45 +1171,36 @@ Scenario = {
                     ['orientation'] = VECTOR3( -5.788735, 0.711286, 0 ),
                     ['position'] = VECTOR3( 354.1253, 14.83685, 372.8632 ),
                 },
-                ['MASS_296'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 331.5, 15.002, 82.5 ),
-                },
-                ['MASS_305'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 103.5, 15.3125, 282.5 ),
-                },
-                ['Mass 05'] = {
-                    ['size'] = FLOAT( 1.000000 ),
-                    ['resource'] = BOOLEAN( true ),
-                    ['amount'] = FLOAT( 100.000000 ),
-                    ['color'] = STRING( 'ff808080' ),
-                    ['editorIcon'] = STRING( '/textures/editor/marker_mass.bmp' ),
-                    ['type'] = STRING( 'Mass' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 427.5, 20.3633, 81.5 ),
-                },
-                ['7_Mex_SecondMainExpansion'] = {
+                ['1_Reclaim_NextToBase'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 326.5, 15.2939, 90.5 ),
+                    ['position'] = VECTOR3( 133.5, 14.84466, 187.5 ),
+                },
+                ['5_Move_Patrol_Chain_Attack_Group_7'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 390.5, 15.31343, 233.5 ),
+                },
+                ['6_Move_Patrol_Chain_Attack_Group_7'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 321.5, 15.31343, 150.5 ),
+                },
+                ['HYDROCARBON_276'] = {
+                    ['size'] = FLOAT( 3.000000 ),
+                    ['resource'] = BOOLEAN( true ),
+                    ['amount'] = FLOAT( 100.000000 ),
+                    ['color'] = STRING( 'ff008000' ),
+                    ['type'] = STRING( 'Hydrocarbon' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Hydrocarbon_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 383.5, 15.3125, 219.5 ),
                 },
                 ['MASS_308'] = {
                     ['size'] = FLOAT( 1.000000 ),
@@ -1211,12 +1213,12 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 415.5, 15.3125, 218.5 ),
                 },
-                ['1_Mex_TwoMexHydro_Left_Mex'] = {
+                ['1_Move_Patrol_Chain_Attack_Group_7'] = {
                     ['color'] = STRING( 'ff800080' ),
                     ['type'] = STRING( 'Blank Marker' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 160.5, 14.8134, 179.5 ),
+                    ['position'] = VECTOR3( 148.5, 15.31343, 329.5 ),
                 },
                 ['Player'] = {
                     ['color'] = STRING( 'ff800080' ),
@@ -1239,21 +1241,7 @@ Scenario = {
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
                     ['position'] = VECTOR3( 457.5, 14.55558, 278.5 ),
                 },
-                ['2_Move_Chain_Attack_Group_6'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 414.5, 15.31343, 227.5 ),
-                },
-                ['1_Move_Chain_Attack_Group_6'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 300.5, 15.31343, 135.5 ),
-                },
-                ['MASS_345'] = {
+                ['MASS_348'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1262,9 +1250,26 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 306.5, 19.9219, 228.5 ),
+                    ['position'] = VECTOR3( 225.5, 19.9766, 266.5 ),
                 },
-                ['MASS_294'] = {
+                ['Cam_2MexHydro'] = {
+                    ['color'] = STRING( 'ff808000' ),
+                    ['type'] = STRING( 'Camera Info' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['zoom'] = FLOAT( 110.988900 ),
+                    ['canSetCamera'] = BOOLEAN( true ),
+                    ['canSyncCamera'] = BOOLEAN( true ),
+                    ['orientation'] = VECTOR3( -2.824623, 0.836497, 0 ),
+                    ['position'] = VECTOR3( 191.7683, 15.086, 171.8174 ),
+                },
+                ['7_Move_Patrol_Chain_Attack_Group_7'] = {
+                    ['color'] = STRING( 'ff800080' ),
+                    ['type'] = STRING( 'Blank Marker' ),
+                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
+                    ['orientation'] = VECTOR3( 0, 0, 0 ),
+                    ['position'] = VECTOR3( 174.5, 15.20405, 198.5 ),
+                },
+                ['MASS_339'] = {
                     ['size'] = FLOAT( 1.000000 ),
                     ['resource'] = BOOLEAN( true ),
                     ['amount'] = FLOAT( 100.000000 ),
@@ -1273,22 +1278,17 @@ Scenario = {
                     ['type'] = STRING( 'Mass' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Mass_prop.bp' ),
                     ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 320.5, 15.3105, 91.5 ),
+                    ['position'] = VECTOR3( 471.5, 15.3125, 492.5 ),
                 },
-                ['Move_Middle_Attack_Group_8'] = {
-                    ['color'] = STRING( 'ff800080' ),
-                    ['type'] = STRING( 'Blank Marker' ),
+                ['Cam_MapInfo'] = {
+                    ['color'] = STRING( 'ff808000' ),
+                    ['type'] = STRING( 'Camera Info' ),
                     ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 276.5, 19.96606, 251.5 ),
-                },
-                ['Fac_2_Rally_2'] = {
-                    ['color'] = STRING( 'FF808000' ),
-                    ['hint'] = BOOLEAN( true ),
-                    ['type'] = STRING( 'Rally Point' ),
-                    ['prop'] = STRING( '/env/common/props/markers/M_Blank_prop.bp' ),
-                    ['orientation'] = VECTOR3( 0, 0, 0 ),
-                    ['position'] = VECTOR3( 195.5, 15.22749, 191.5 ),
+                    ['zoom'] = FLOAT( 661.276500 ),
+                    ['canSetCamera'] = BOOLEAN( true ),
+                    ['canSyncCamera'] = BOOLEAN( true ),
+                    ['orientation'] = VECTOR3( -3.141593, 1.570796, 0 ),
+                    ['position'] = VECTOR3( 283.4824, 19.98183, 243.4448 ),
                 },
             },
         },
@@ -1320,6 +1320,14 @@ Scenario = {
                 "2_Reclaim_MainBase",
             },
         },
+        ['Move_Chain_Attack_Group_6'] = {
+            Markers = {
+                "1_Move_Chain_Attack_Group_6",
+                "2_Move_Chain_Attack_Group_6",
+                "3_Move_Chain_Attack_Group_6",
+                "4_Move_Chain_Attack_Group_6",
+            },
+        },
         ['Patrol_Chain_Attack_Group_7'] = {
             Markers = {
                 "1_Move_Patrol_Chain_Attack_Group_7",
@@ -1337,14 +1345,6 @@ Scenario = {
                 "2_Move_Chain_Attack_Group_5",
                 "3_Move_Chain_Attack_Group_5",
                 "4_Move_Chain_Attack_Group_5",
-            },
-        },
-        ['Move_Chain_Attack_Group_6'] = {
-            Markers = {
-                "1_Move_Chain_Attack_Group_6",
-                "2_Move_Chain_Attack_Group_6",
-                "3_Move_Chain_Attack_Group_6",
-                "4_Move_Chain_Attack_Group_6",
             },
         },
     },
@@ -1450,39 +1450,11 @@ Scenario = {
                                         orders = '',
                                         platoon = '',
                                         Units = {
-                                            ['10_Pgen'] = {
-                                                type = 'ueb1101',
-                                                orders = '',
-                                                platoon = '',
-                                                Position = { 169.5, 14.59464, 154.5 },
-                                                Orientation = { 0, 0, 0 },
-                                            },
                                             ['13_LandFactory'] = {
                                                 type = 'ueb0101',
                                                 orders = '',
                                                 platoon = '',
                                                 Position = { 162.5, 14.71184, 157.5 },
-                                                Orientation = { 0, 0, 0 },
-                                            },
-                                            ['11_Pgen_0'] = {
-                                                type = 'ueb1101',
-                                                orders = '',
-                                                platoon = '',
-                                                Position = { 167.5, 14.59855, 154.5 },
-                                                Orientation = { 0, 0, 0 },
-                                            },
-                                            ['8_AirFactory'] = {
-                                                type = 'ueb0102',
-                                                orders = '',
-                                                platoon = '',
-                                                Position = { 178.5, 14.78996, 159.5 },
-                                                Orientation = { 0, 0, 0 },
-                                            },
-                                            ['5_LandFactory'] = {
-                                                type = 'ueb0101',
-                                                orders = '',
-                                                platoon = '',
-                                                Position = { 170.5, 14.78996, 167.5 },
                                                 Orientation = { 0, 0, 0 },
                                             },
                                             ['12_LandFactory'] = {
@@ -1492,11 +1464,25 @@ Scenario = {
                                                 Position = { 170.5, 14.61417, 149.5 },
                                                 Orientation = { 0, 0, 0 },
                                             },
-                                            ['4_Pgen'] = {
+                                            ['10_Pgen'] = {
                                                 type = 'ueb1101',
                                                 orders = '',
                                                 platoon = '',
-                                                Position = { 173.5, 14.73527, 158.5 },
+                                                Position = { 169.5, 14.59464, 154.5 },
+                                                Orientation = { 0, 0, 0 },
+                                            },
+                                            ['5_LandFactory'] = {
+                                                type = 'ueb0101',
+                                                orders = '',
+                                                platoon = '',
+                                                Position = { 170.5, 14.78996, 167.5 },
+                                                Orientation = { 0, 0, 0 },
+                                            },
+                                            ['11_Pgen_0'] = {
+                                                type = 'ueb1101',
+                                                orders = '',
+                                                platoon = '',
+                                                Position = { 167.5, 14.59855, 154.5 },
                                                 Orientation = { 0, 0, 0 },
                                             },
                                             ['1_Hydro'] = {
@@ -1504,6 +1490,20 @@ Scenario = {
                                                 orders = '',
                                                 platoon = '',
                                                 Position = { 177.5, 14.8095, 166.5 },
+                                                Orientation = { 0, 0, 0 },
+                                            },
+                                            ['4_Pgen'] = {
+                                                type = 'ueb1101',
+                                                orders = '',
+                                                platoon = '',
+                                                Position = { 173.5, 14.73527, 158.5 },
+                                                Orientation = { 0, 0, 0 },
+                                            },
+                                            ['8_AirFactory'] = {
+                                                type = 'ueb0102',
+                                                orders = '',
+                                                platoon = '',
+                                                Position = { 178.5, 14.78996, 159.5 },
                                                 Orientation = { 0, 0, 0 },
                                             },
                                             ['2_Pgen'] = {
@@ -1597,18 +1597,18 @@ Scenario = {
                                         Position = { 148.5, 14.83684, 118.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['15_Pgen_PowerSpam'] = {
-                                        type = 'ueb1101',
-                                        orders = '',
-                                        platoon = '',
-                                        Position = { 140.5, 14.86028, 106.5 },
-                                        Orientation = { 0, 0, 0 },
-                                    },
                                     ['8_Pgen_PowerSpam'] = {
                                         type = 'ueb1101',
                                         orders = '',
                                         platoon = '',
                                         Position = { 142.5, 14.83684, 112.5 },
+                                        Orientation = { 0, 0, 0 },
+                                    },
+                                    ['15_Pgen_PowerSpam'] = {
+                                        type = 'ueb1101',
+                                        orders = '',
+                                        platoon = '',
+                                        Position = { 140.5, 14.86028, 106.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['9_Pgen_PowerSpam'] = {
@@ -1618,11 +1618,11 @@ Scenario = {
                                         Position = { 140.5, 14.85247, 110.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['14_Pgen_PowerSpam'] = {
+                                    ['10_Pgen_PowerSpam'] = {
                                         type = 'ueb1101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 138.5, 14.85247, 104.5 },
+                                        Position = { 138.5, 14.86028, 108.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['13_Pgen_PowerSpam'] = {
@@ -1660,11 +1660,11 @@ Scenario = {
                                         Position = { 152.5, 14.83684, 122.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['10_Pgen_PowerSpam'] = {
+                                    ['14_Pgen_PowerSpam'] = {
                                         type = 'ueb1101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 138.5, 14.86028, 108.5 },
+                                        Position = { 138.5, 14.85247, 104.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['1_Pgen_PowerSpam'] = {
@@ -1687,11 +1687,11 @@ Scenario = {
                                         Position = { 33.5, 15.31343, 30.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['3_Mex_BackExpansion'] = {
+                                    ['2_Mex_BackExpansion'] = {
                                         type = 'ueb1103',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 42.5, 15.31343, 30.5 },
+                                        Position = { 28.5, 15.31343, 39.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['15_Radar_BackExpansion'] = {
@@ -1736,11 +1736,11 @@ Scenario = {
                                         Position = { 34.5, 15.31343, 31.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['13_Wall_BackExpansion'] = {
-                                        type = 'ueb5101',
+                                    ['3_Mex_BackExpansion'] = {
+                                        type = 'ueb1103',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 33.5, 15.31343, 32.5 },
+                                        Position = { 42.5, 15.31343, 30.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['4_Mex_BackExpansion'] = {
@@ -1757,11 +1757,11 @@ Scenario = {
                                         Position = { 34.5, 15.31343, 32.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['12_Wall_BackExpansion'] = {
+                                    ['10_Wall_BackExpansion'] = {
                                         type = 'ueb5101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 33.5, 15.31343, 31.5 },
+                                        Position = { 34.5, 15.31343, 30.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['14_LandFactory_BackExpansion'] = {
@@ -1771,18 +1771,18 @@ Scenario = {
                                         Position = { 39.5, 15.31343, 25.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['10_Wall_BackExpansion'] = {
+                                    ['12_Wall_BackExpansion'] = {
                                         type = 'ueb5101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 34.5, 15.31343, 30.5 },
+                                        Position = { 33.5, 15.31343, 31.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['2_Mex_BackExpansion'] = {
-                                        type = 'ueb1103',
+                                    ['13_Wall_BackExpansion'] = {
+                                        type = 'ueb5101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 28.5, 15.31343, 39.5 },
+                                        Position = { 33.5, 15.31343, 32.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                 },
@@ -1984,11 +1984,11 @@ Scenario = {
                                 orders = '',
                                 platoon = '',
                                 Units = {
-                                    ['3_Mex_TwoMexNextToSecondMainExpansion'] = {
+                                    ['1_Mex_TwoMexNextToSecondMainExpansion'] = {
                                         type = 'ueb1103',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 188.5, 15.31343, 68.5 },
+                                        Position = { 312.5, 14.31728, 52.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['2_Mex_TwoMexNextToSecondMainExpansion'] = {
@@ -1998,45 +1998,24 @@ Scenario = {
                                         Position = { 304.5, 14.78215, 54.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['1_Mex_TwoMexNextToSecondMainExpansion'] = {
+                                    ['3_Mex_TwoMexNextToSecondMainExpansion'] = {
                                         type = 'ueb1103',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 312.5, 14.31728, 52.5 },
+                                        Position = { 188.5, 15.31343, 68.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                 },
                             },
-                            ['FactorySpam'] = GROUP {
+                            ['TwoMexHydro_Left_Mex'] = GROUP {
                                 orders = '',
                                 platoon = '',
                                 Units = {
-                                    ['2_LandFactory_FactorySpam'] = {
-                                        type = 'ueb0101',
+                                    ['1_Mex_TwoMexHydro_Left_Mex'] = {
+                                        type = 'ueb1103',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 157.5, 14.86419, 187.5 },
-                                        Orientation = { 0, 0, 0 },
-                                    },
-                                    ['1_LandFactory_FactorySpam'] = {
-                                        type = 'ueb0101',
-                                        orders = '',
-                                        platoon = '',
-                                        Position = { 159.5, 14.80559, 179.5 },
-                                        Orientation = { 0, 0, 0 },
-                                    },
-                                    ['4_LandFactory_FactorySpam'] = {
-                                        type = 'ueb0101',
-                                        orders = '',
-                                        platoon = '',
-                                        Position = { 167.5, 14.84075, 181.5 },
-                                        Orientation = { 0, 0, 0 },
-                                    },
-                                    ['3_LandFactory_FactorySpam'] = {
-                                        type = 'ueb0101',
-                                        orders = '',
-                                        platoon = '',
-                                        Position = { 165.5, 14.94622, 189.5 },
+                                        Position = { 162.5, 14.82122, 184.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                 },
@@ -2162,18 +2141,11 @@ Scenario = {
                                         Position = { 236.5, 19.99341, 269.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['12_Radar_Middle'] = {
-                                        type = 'ueb3101',
-                                        orders = '',
-                                        platoon = '',
-                                        Position = { 230.5, 19.97388, 270.5 },
-                                        Orientation = { 0, 0, 0 },
-                                    },
-                                    ['11_Wall_Middle'] = {
+                                    ['8_Wall_Middle'] = {
                                         type = 'ueb5101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 235.5, 19.99341, 269.5 },
+                                        Position = { 236.5, 19.99341, 267.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                     ['7_Wall_Middle'] = {
@@ -2183,24 +2155,52 @@ Scenario = {
                                         Position = { 237.5, 19.99341, 267.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
-                                    ['8_Wall_Middle'] = {
+                                    ['11_Wall_Middle'] = {
                                         type = 'ueb5101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 236.5, 19.99341, 267.5 },
+                                        Position = { 235.5, 19.99341, 269.5 },
+                                        Orientation = { 0, 0, 0 },
+                                    },
+                                    ['12_Radar_Middle'] = {
+                                        type = 'ueb3101',
+                                        orders = '',
+                                        platoon = '',
+                                        Position = { 230.5, 19.97388, 270.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                 },
                             },
-                            ['TwoMexHydro_Left_Mex'] = GROUP {
+                            ['FactorySpam'] = GROUP {
                                 orders = '',
                                 platoon = '',
                                 Units = {
-                                    ['1_Mex_TwoMexHydro_Left_Mex'] = {
-                                        type = 'ueb1103',
+                                    ['2_LandFactory_FactorySpam'] = {
+                                        type = 'ueb0101',
                                         orders = '',
                                         platoon = '',
-                                        Position = { 162.5, 14.82122, 184.5 },
+                                        Position = { 157.5, 14.86419, 187.5 },
+                                        Orientation = { 0, 0, 0 },
+                                    },
+                                    ['1_LandFactory_FactorySpam'] = {
+                                        type = 'ueb0101',
+                                        orders = '',
+                                        platoon = '',
+                                        Position = { 159.5, 14.80559, 179.5 },
+                                        Orientation = { 0, 0, 0 },
+                                    },
+                                    ['4_LandFactory_FactorySpam'] = {
+                                        type = 'ueb0101',
+                                        orders = '',
+                                        platoon = '',
+                                        Position = { 167.5, 14.84075, 181.5 },
+                                        Orientation = { 0, 0, 0 },
+                                    },
+                                    ['3_LandFactory_FactorySpam'] = {
+                                        type = 'ueb0101',
+                                        orders = '',
+                                        platoon = '',
+                                        Position = { 165.5, 14.94622, 189.5 },
                                         Orientation = { 0, 0, 0 },
                                     },
                                 },
