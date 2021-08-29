@@ -54,7 +54,7 @@ FirstMainExpansion = {
         vid = '', bank = '', cue = 'FirstMainExpansion_1', faction = 'UEF'
     },
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FirstMainExpansion_2>[{i TrainingOfficer}]: As you can see there are 6 mexes, hydro and a bit of reclaim. You should try to here with both an engineer and an ACU. Make sure to also send some tanks here to defend it.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FirstMainExpansion_2>[{i TrainingOfficer}]: As you can see there are 6 mexes, hydro and a bit of reclaim. You should try to build and secure this expansion with both an engineer and an ACU. Make sure to also send some tanks here to defend it.',
         vid = '', bank = '', cue = 'FirstMainExpansion_2', faction = 'UEF'
     },
 }
@@ -276,7 +276,7 @@ EighthEngineer = {
 
 PowerAndFactorySpam = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_1>[{i TrainingOfficer}]: This and the next engie will start your Power spam, because you will need a lot of power as soon you get both main expansions.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_1>[{i TrainingOfficer}]: 9th and 10th engie will start your Power spam, because you will need a lot of power as soon you get both main expansions.',
         vid = '', bank = '', cue = 'PowerAndFactorySpam_1', faction = 'UEF'
     },
         {
