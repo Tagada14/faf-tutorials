@@ -84,67 +84,67 @@ function MapIntro()
     -- Initial Camera
     ScenarioFramework.Dialogue(OpStrings.MapInfo, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 15)
-    WaitSeconds(5)
+    WaitSeconds(1)
 
     -- Starting Position
     ScenarioFramework.Dialogue(OpStrings.StartPosition, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_StartPosition'), 4)
-    WaitSeconds(5)
+    WaitSeconds(4)
 
-    -- Reclaim near base
+    -- Hydro and 2 mexes below starting position
     ScenarioFramework.Dialogue(OpStrings.TwoMexHydro, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexHydro'), 3)
     WaitSeconds(3)
 
-    -- Reclaim in middle
+    -- Reclaim near the base
     ScenarioFramework.Dialogue(OpStrings.ReclaimNearBase, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_ReclaimNearBase'), 3)
-    WaitSeconds(4)
+    WaitSeconds(3)
 
-    -- Civ buildings
+    -- First major expansion
     ScenarioFramework.Dialogue(OpStrings.FirstMainExpansion, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_FirstMainExpansion'), 3)
-    WaitSeconds(7)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_FirstMainExpansion'), 4)
+    WaitSeconds(9)
 
-    -- More info about middle pass
+    -- 2 Mexes behind the first major expanion
     ScenarioFramework.Dialogue(OpStrings.TwoMexNextToFirstMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexNextToFirstMainExpansion'), 4)
-    WaitSeconds(5)
+    WaitSeconds(8)
 
-    -- Bottom Pass
+    -- 3 mexes behind the base
     ScenarioFramework.Dialogue(OpStrings.ThreeMexBehindBase, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_3MexBehindBase'), 7)
-    WaitSeconds(5)
+    WaitSeconds(8)
 
-    -- North Area 
+    -- Second major expansion
     ScenarioFramework.Dialogue(OpStrings.SecondMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_SecondMainExpansion'), 7)
     WaitSeconds(7)
 
-    -- North Mexes
+    -- 2 mexes behind 2nd major expansion
     ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_TwoMexNextToSecondMainExpansion'), 4)
-    WaitSeconds(5)
+    WaitSeconds(3)
 
-    -- Final words
+    -- Middle
     ScenarioFramework.Dialogue(OpStrings.Middle, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Middle'), 7)
-    WaitSeconds(5)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Middle'), 5)
+    WaitSeconds(8)
 
-        -- Move to Starting position
+        -- Enemy starting position
     ScenarioFramework.Dialogue(OpStrings.EnemyBase, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_EnemyStartPosition'), 7)
-    WaitSeconds(4)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_EnemyStartPosition'), 4)
+    WaitSeconds(2)
 
-    -- Move to Starting position
+    -- Whole map overview
     ScenarioFramework.Dialogue(OpStrings.WholeMap, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 7)
-    WaitSeconds(8)
+    WaitSeconds(10)
 
     -- Move to Starting position
     ScenarioFramework.Dialogue(OpStrings.StartBuildOrder, nil, true)
-    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_BO_Start'), 7)
-    WaitSeconds(3)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_BO_Start'), 6)
+    WaitSeconds(1)
 
     Cinematics.ExitNISMode()
 
@@ -186,7 +186,7 @@ function StartBuildOrder(skipZoom)
         Engineers = {
             { -- Engineer 1
                 {build = '1_Engineer_Build'},
-                {wait = {'Units_Active', 6, categories.ueb0101}},
+                {wait = {'Units_Active', 4, categories.ueb0101}},
                 {build = 'FactorySpam'},
             },
 
@@ -195,13 +195,13 @@ function StartBuildOrder(skipZoom)
             },
 
             { -- Engineer 3
-                {reclaim = {area = 'Reclaim_MainBase', moveChain = 'Move_Chain_Reclaim_MainBase', minMass = 5}},
+                {reclaim = {area = 'Reclaim_MainBase', moveChain = 'Move_Chain_Reclaim_MainBase', minMass = 10}},
                 {build = 'SecondMainExpansion'},
             },
 
             { -- Engineer 4
                 {build = 'TwoMexHydro_Left_Mex'},
-                {reclaim = {area = 'Reclaim_NextToBase', moveChain = 'Move_Chain_Reclaim_NextToBase', minMass = 5}},
+                {reclaim = {area = 'Reclaim_NextToBase', moveChain = 'Move_Chain_Reclaim_NextToBase', minMass = 10}},
                 {build = 'BackExpansion'},
             },
 
@@ -225,17 +225,17 @@ function StartBuildOrder(skipZoom)
             },
 
             { -- Engineer 9
-                {assist = {'Engineer', 1}},
-                
-            },
-
-            { -- Engineer 10
                 {build = 'PowerSpam'},
                 
             },
 
+            { -- Engineer 10
+                {assist = {'Engineer', 9}},
+                
+            },
+
             { -- Engineer 11
-                {assist = {'Engineer', 10}},
+                {assist = {'Engineer', 1}},
                 
             },
 
@@ -279,9 +279,11 @@ function StartBuildOrder(skipZoom)
                         {'uel0101', 1},
                         {'uel0201', 5},
                     },
-                    RallyPoint = 'Fac_2_Rally',
+                    RallyPoint = 'Fac_2_Rally_1',
                     RepeatBuild = true,
                 },
+                {wait = {'Units_Active', 4, categories.uel0201, ClearCommands = false}}, -- Order 2
+                {RallyPoint = 'Fac_2_Rally_2',}, -- Order 3
             },
             { -- Factory 4
                 { -- Order 1
@@ -379,6 +381,7 @@ function StartBuildOrder(skipZoom)
                 {assist = {'Engineer', 4}},
             },
         },
+
         { -- Attack Group 4
             units = {{'uel0101', 1}},
             orders = {
@@ -392,13 +395,29 @@ function StartBuildOrder(skipZoom)
                 {move = 'Move_Chain_Attack_Group_5'}
             },
         },
+
         { -- Attack Group 6
             units = {{'uel0201', 4}, {'uel0101', 1}},
             orders = {
                 {move = 'Move_Chain_Attack_Group_6'}
             },
         },
-        
+
+        { -- Attack Group 7
+            units = {{'uea0101', 1}},
+            orders = {
+                {move = 'Move_Chain_Attack_Group_7'},
+                {patrol = 'Patrol_Chain_Attack_Group_7'}
+            },
+        },
+
+        { -- Attack Group 8
+            units = {{'uel0201', 2}, {'uel0101', 1}},
+            orders = {
+                {move = {'Move_Middle_Attack_Group_8'}}
+            },
+        },
+
     })
 
     tManager:SetVoiceOvers(OpStrings, {
@@ -412,8 +431,9 @@ function StartBuildOrder(skipZoom)
         TankScout2 = 'AttackGroup4',
         SecondFactory = 'LandFactory2',
         FithEngineer = 'Engineer5',
-        AirFactoryAndACUMoveOut = 'AirFactory1', 
-        MoreTanks = 'AttackGroup5',
+        AirFactoryAndACUMoveOut = 'AirFactory1',
+        AirScout = {'Units_Active', 1, categories.uea0101}, 
+        MoreTanks = 'AttackGroup6',
         SixthEngineer = 'Engineer6',
         FactorySpam = 'LandFactory3',
         SeventhEngineer = 'Engineer7',

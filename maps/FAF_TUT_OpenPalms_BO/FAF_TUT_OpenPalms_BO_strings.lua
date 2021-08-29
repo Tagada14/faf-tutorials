@@ -18,7 +18,7 @@ EndBuildOrder = TutorialStrings.EndBuildOrder
 ---------------------
 MapInfo = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_MapInfo_1>[{i TrainingOfficer}]: Welcome to this Supreme Commander Forged Alliance Forever map tutorial. This tutorial will teach you about the classic 1vs1 map Open Palms. Let\'s get started..',
+        text = '<LOC FAF_TUT_OpenPalms_BO_MapInfo_1>[{i TrainingOfficer}]: Welcome to this Supreme Commander Forged Alliance Forever map tutorial. This tutorial will teach you about the classic 1vs1 map Open Palms. Let\'s get started.',
         vid = '', bank = '', cue = 'MapInfo_1', faction = 'UEF'
     },
     {
@@ -29,7 +29,7 @@ MapInfo = {
 
 StartPosition = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_StartPosition>[{i TrainingOfficer}]: You start in one corner of the map surrounded by a mountain range. You have 4 Mass Extractors (mexes) in your starting position.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_StartPosition>[{i TrainingOfficer}]: You start in one of corners surrounded by a mountain range. You have 4 Mass Extractors (mexes) in your starting position.',
         vid = '', bank = '', cue = 'StartPosition', faction = 'UEF'
     },
 }
@@ -43,36 +43,52 @@ TwoMexHydro = {
 
 ReclaimNearBase = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_ReclaimNearBase>[{i TrainingOfficer}]: This reclaim is important to boost your buildorder.',
-        vid = 'FAF_TUT_OpenPalms_BO_ReclaimNearBase', bank = '', cue = 'ReclaimNearBase', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_ReclaimNearBase>[{i TrainingOfficer}]: This reclaim is important to boost your build order. Make sure to grab it with an engineer.',
+        vid = '', bank = '', cue = 'ReclaimNearBase', faction = 'UEF'
     },
 }
 
 FirstMainExpansion = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FirstMainExpansion>[{i TrainingOfficer}]: Your first and most important expansion is this one. As you can see there are 6 mexes, hydro and a bit of reclaim. You should try to secure it with an engineer and an ACU.',
-        vid = 'FAF_TUT_OpenPalms_BO_FirstMainExpansion', bank = '', cue = 'FirstMainExpansion', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_FirstMainExpansion_1>[{i TrainingOfficer}]: Your first and most important expansion is located sothwest of your base.',
+        vid = '', bank = '', cue = 'FirstMainExpansion_1', faction = 'UEF'
+    },
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_FirstMainExpansion_2>[{i TrainingOfficer}]: As you can see there are 6 mexes, hydro and a bit of reclaim. You should try to here with both an engineer and an ACU. Make sure to also send some tanks here to defend it.',
+        vid = '', bank = '', cue = 'FirstMainExpansion_2', faction = 'UEF'
     },
 }
 
 TwoMexNextToFirstMainExpansion = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_TwoMexNextToFirstMainExpansion>[{i TrainingOfficer}]: To the side of the expansion there are 2 mexes that can be built while getting the main expansion. Make sure to secure the pathway near those mexes as enemy often tries to run by with tanks through there.',
-        vid = 'FAF_TUT_OpenPalms_BO_TwoMexNextToFirstMainExpansion', bank = '', cue = 'TwoMexNextToFirstMainExpansion', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_TwoMexNextToFirstMainExpansion_1>[{i TrainingOfficer}]: To the side of the expansion there are 2 mexes that can be built while getting the main expansion.',
+        vid = '', bank = '', cue = 'TwoMexNextToFirstMainExpansion_1', faction = 'UEF'
+    },
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_TwoMexNextToFirstMainExpansion_2>[{i TrainingOfficer}]: Make sure to secure the pathway near those mexes as enemy often tries to run by with tanks through here.',
+        vid = '', bank = '', cue = 'TwoMexNextToFirstMainExpansion_2', faction = 'UEF'
     },
 }
 
 ThreeMexBehindBase = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_ThreeMexBehindBase>[{i TrainingOfficer}]: Behind your main base are located 3 mexes and a large forest. Enemy will often try to sneak units through the sides to raid an engineer expanding to these mexes so make sure to protect him well. After you grab the mexes don\'t forget a factory to reclaim the trees.',
-        vid = 'FAF_TUT_OpenPalms_BO_ThreeMexBehindBase', bank = '', cue = 'ThreeMexBehindBase', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_ThreeMexBehindBase_1>[{i TrainingOfficer}]: Behind your main base you will find another expansion.',
+        vid = 'FAF_TUT_OpenPalms_BO_ThreeMexBehindBase_1', bank = '', cue = 'ThreeMexBehindBase', faction = 'UEF'
+    },
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_ThreeMexBehindBase_2>[{i TrainingOfficer}]: It has 3 mexes and a large forest. Enemy will often try to sneak units through the sides to raid an engineer expanding to these mexes so make sure to protect him well. After you grab the mexes don\'t forget a factory to reclaim the trees.',
+        vid = '', bank = '', cue = 'ThreeMexBehindBase_2', faction = 'UEF'
     },
 }
 
 SecondMainExpansion = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_SecondMainExpansion>[{i TrainingOfficer}]: Mirroed on the other side is another major expansion. After you secure it make sure to build a T1 PD and a factory to reinforce the position.',
-        vid = 'FAF_TUT_OpenPalms_BO_SecondMainExpansion', bank = '', cue = 'SecondMainExpansion', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_SecondMainExpansion_1>[{i TrainingOfficer}]: Mirroed on the other side is another major expansion.',
+        vid = '', bank = '', cue = 'SecondMainExpansion_1', faction = 'UEF'
+    },
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_SecondMainExpansion_2>[{i TrainingOfficer}]: After you build the mexes make sure to build a T1 PD and a radar to reinforce the position. Enemy ACU will often try to push to this position to take control of it.',
+        vid = '', bank = '', cue = 'SecondMainExpansion_2', faction = 'UEF'
     },
 }
 
@@ -85,8 +101,12 @@ TwoMexNextToSecondMainExpansion = {
 
 Middle = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_Middle>[{i TrainingOfficer}]: The middle of the map is composed of a plateau and it\'s the shortest path to the mainbase of your opponent however it\' a small choke so avoid moving bigger armies through here. The plateau offers 4 mexes and a good position for a radar.',
-        vid = '2', bank = '', cue = 'Middle', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_Middle_1>[{i TrainingOfficer}]: The middle of the map is composed of a plateau with an entrance on either side. ',
+        vid = '', bank = '', cue = 'Middle_1', faction = 'UEF'
+    },
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_Middle_2>[{i TrainingOfficer}]: It\'s the shortest path to the mainbase of your opponent however the small choke means that you should avoid moving bigger armies through here. The plateau offers 4 mexes and a good position for a radar.',
+        vid = '', bank = '', cue = 'Middle_2', faction = 'UEF'
     },
 }
 
@@ -99,17 +119,15 @@ EnemyBase = {
 
 WholeMap = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_WholeMap>[{i TrainingOfficer}]: As you can see the whole map is symetrical so your opponent will try to secure the same type of expansions as you. Open Palms is a very open map so make sure to build a lot of t1 tanks early on and try to raid your enemies expansions. The places that we suggested to keep an eye on for enemy raids are mirroed on the other side and serve as good raiding pathways.',
-        vid = '', bank = '', cue = 'WholeMap', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_WholeMap_1>[{i TrainingOfficer}]: As you can see the whole map is symetrical so your opponent will try to secure the same type of expansions as you.',
+        vid = '', bank = '', cue = 'WholeMap_1', faction = 'UEF'
+    },
+        {
+        text = '<LOC FAF_TUT_OpenPalms_BO_WholeMap_2>[{i TrainingOfficer}]: Open Palms is a very open map so make sure to build a lot of t1 tanks early on and try to raid your enemy\'s expansions. The places that we suggested to keep an eye on for enemy raids serve as good raiding pathways for you on enemy\'s side of the map.',
+        vid = '', bank = '', cue = 'WholeMap_2', faction = 'UEF'
     },
 }
 
-StartBuildOrder = {
-    {
-        text = '<LOC FAF_TUT_OpenPalms_BO_StartBuildOrder>[{i TrainingOfficer}]: Now it\'s time to show you an example build order.',
-        vid = '', bank = '', cue = 'StartBuildOrder', faction = 'UEF'
-    },
-}
 
 --------------
 -- Build order
@@ -127,10 +145,12 @@ LandFirst = {
         text = '<LOC FAF_TUT_OpenPalms_BO_LandFirst_3>[{i TrainingOfficer}]: The first Land Factory will build 3 engineers. Two for building your base and 1 for expanding. Then a set of tank + scout followed by another engi for expansion and a set of tank + scout. Use the tanks to protect your expanding enginners and/or for raiding enemy engineers.',
         vid = '', bank = '', cue = 'LandFirst_3', faction = 'UEF'
     },
+    --[[
     {
         text = '<LOC FAF_TUT_OpenPalms_BO_LandFirst_4>[{i TrainingOfficer}]: Make sure to assist the tanks with the scouts so they follow them around, it\'s easier to micro them this way.',
         vid = '', bank = '', cue = 'LandFirst_4', faction = 'UEF'
     },
+    ]]--
     {
         text = '<LOC FAF_TUT_OpenPalms_BO_LandFirst_5>[{i TrainingOfficer}]: After that you should build additional engineers. On a map like Open Palms you will need extra Build Power to quickly scale your power and production as you secure your expansions.',
         vid = '', bank = '', cue = 'LandFirst_5', faction = 'UEF'
@@ -143,11 +163,11 @@ LandFirst = {
 
 FirstEngineer = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FirstEngineer_1>[{i TrainingOfficer}]: First engi starts building the hydro and then queues up 3 pgens, second land factory, 2 additional pgens and an air factory. After that it will build 4 sets of 1 pgen 1 land factory..',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FirstEngineer_1>[{i TrainingOfficer}]: First engi starts building the hydro and then queues up 3 pgens, second land factory, 2 additional pgens and an air factory. After that it will build 3 extra pgens and 2 more land factories.',
         vid = '', bank = '', cue = 'FirstEngineer_1', faction = 'UEF'
     },
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FirstEngineer_2>[{i TrainingOfficer}]: Always try to place Land Factories around Mass Extractors and Air Factories around Power Generators and hydros to fully use the adjacency bonus (cost discount).',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FirstEngineer_2>[{i TrainingOfficer}]: Always try to place Land Factories around Mass Extractors if there are any nearby (in this case they are too far away). Place Air Factories next hydros and build your T1 pgens next to them to fully use the adjacency bonus (cost discount).',
         vid = '', bank = '', cue = 'FirstEngineer_2', faction = 'UEF'
     },
 }
@@ -161,7 +181,7 @@ SecondEngineer = {
 
 ThirdEngineer = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_ThirdEngineer>[{i TrainingOfficer}]: Third engi grabs a bit of rock reclaim, builds 1 mex next to the hydro and then goes to the second main expansion and constructs the mexes there followed by a T1 PD, radar and then a factory.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_ThirdEngineer>[{i TrainingOfficer}]: Third engi grabs a bit of rock reclaim, builds 1 mex next to the hydro and then goes to the second main expansion and constructs the mexes there followed by a T1 PD and a radar.',
         vid = '', bank = '', cue = 'ThirdEngineer', faction = 'UEF'
     },
 }
@@ -175,7 +195,7 @@ TankScout1 = {
 
 FourthEngineer = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FourthEngineer>[{i TrainingOfficer}]: Fourth engi builds the second mex next to the hydro and then reclaims rocks along side the mountains. Then it proceeds to move to the 3 mex expansion behind your base grabbing 1 mex along the way. After building mexes in the back expansion it will make a land factory followed by a T1 PD and radar.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FourthEngineer>[{i TrainingOfficer}]: Fourth engi builds the second mex next to the hydro and then reclaims rocks along side the mountains. Then it proceeds to move to the 3 mex expansion behind your base while grabbing 1 mex along the way. After building mexes in the back expansion it will make a land factory followed by a T1 PD and radar.',
         vid = '', bank = '', cue = 'FourthEngineer', faction = 'UEF'
     },
 }
@@ -189,11 +209,11 @@ TankScout2 = {
 
 SecondFactory = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_SecondFactory_1>[{i TrainingOfficer}]: Your second Land Factory will produce only attacking units. For the beginning you will need only tanks and scouts. A good ratio is 5 tanks to a single scout. Later you can add an artillery into the mix to deal with enemy Point Defenses.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_SecondFactory_1>[{i TrainingOfficer}]: Your second Land Factory will produce only offensive units. For the beginning you will need only tanks and scouts. A good ratio is 6 tanks to a single scout. Later you can add an artillery into the mix to deal with enemy Point Defenses or a mobile anti air if you lose air control.',
         vid = '', bank = '', cue = 'SecondFactory_1', faction = 'UEF'
     },
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_SecondFactory_2>[{i TrainingOfficer}]: Once you build more factories, set them to assist this one. That way you need to set a build queue only on the one factory which will save you more time to micro your units.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_SecondFactory_2>[{i TrainingOfficer}]: Once you build more factories, set them to assist this one. That way you need to set a build queue only on the this one factory which will save you some time and simplify your waypoints.',
         vid = '', bank = '', cue = 'SecondFactory_2', faction = 'UEF'
     },
 }
@@ -206,19 +226,19 @@ FithEngineer = {
 
 AirFactoryAndACUMoveOut = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_AirFactoryAndACUMoveOut_1>[{i TrainingOfficer}]: The airfactory builds a queue of 1 airscout and 3 intercepters, that way you always have airscouts available and their existence will remind you of scouting.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_AirFactoryAndACUMoveOut_1>[{i TrainingOfficer}]: The airfactory builds a queue of 1 airscout and 3 interceptors, that way you always have airscouts available and their existence will remind you of scouting.',
         vid = '', bank = '', cue = 'AirFactoryAndACUMoveOut_1', faction = 'UEF'
     },
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_AirFactoryAndACUMoveOut_2>[{i TrainingOfficer}]: The ACU will leave the base after this factory is finished. It will go to the first main expansion and make 2 mexes, 1 more mex near the hydro and then help an engineer make the hydro.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_AirFactoryAndACUMoveOut_2>[{i TrainingOfficer}]: The ACU will leave the base after this factory is finished. It will go to the first main expansion and make 3 mexes and then help an engineer make the hydro.',
         vid = '', bank = '', cue = 'AirFactoryAndACUMoveOut_2', faction = 'UEF'
     },
 }
 
-MoreTanks = {
+AirScout = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_MoreTanks>[{i TrainingOfficer}]: Distributing other tanks will depend on your opponent\'s movement. Reinforce either side as needed. The scout you sent with the first tanks should show you how many units your opponent has in that area.',
-        vid = 'FAF_TUT_OpenPalms_BO_MoreTanks', bank = '', cue = 'MoreTanks', faction = 'UEF'
+        text = '<LOC FAF_TUT_OpenPalms_BO_AirScout>[{i TrainingOfficer}]: The scout plane should look for incoming raids before scouting your opponent\'s base. After that it can patrol the map looking for raid opportunies and incomming raids.',
+        vid = '', bank = '', cue = 'AirScout', faction = 'UEF'
     },
 }
 
@@ -231,11 +251,11 @@ SixthEngineer = {
 
 FactorySpam = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FactorySpam_1>[{i TrainingOfficer}]: By now you should have only 2 engis making a combination of 1 pgen and 1 factory. Make sure that any new Land factory will assist your main Land factory (the 2nd one).',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FactorySpam_1>[{i TrainingOfficer}]: By now you should have 2 engies making factories. Make sure that any new Land factory will assist your main Land factory (the 2nd one).',
         vid = '', bank = '', cue = 'FactorySpam_1', faction = 'UEF'
     },
         {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FactorySpam_2>[{i TrainingOfficer}]: This way it will produce the same units and send them to wherever the main factories waypoit is.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FactorySpam_2>[{i TrainingOfficer}]: This way it will produce the same units and send them to wherever the main factory\'s waypoit is.',
         vid = '', bank = '', cue = 'FactorySpam_2', faction = 'UEF'
     },
 }
@@ -256,18 +276,25 @@ EighthEngineer = {
 
 PowerAndFactorySpam = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_1>[{i TrainingOfficer}]: The next engi will assit the engis making the factories. Two after that will start your Power spam, because you will need a lot of power as soon you get both main expansions.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_1>[{i TrainingOfficer}]: This and the next engie will start your Power spam, because you will need a lot of power as soon you get both main expansions.',
         vid = '', bank = '', cue = 'PowerAndFactorySpam_1', faction = 'UEF'
     },
         {
-        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_2>[{i TrainingOfficer}]: You should queue around 15 pgens in a diagonal line.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_PowerAndFactorySpam_2>[{i TrainingOfficer}]: You should queue around 15 pgens in a diagonal line. Extra engies should assist the ones that are making the factories.',
         vid = '', bank = '', cue = 'PowerAndFactorySpam_2', faction = 'UEF'
+    },
+}
+
+MoreTanks = {
+    {
+        text = '<LOC FAF_TUT_OpenPalms_BO_MoreTanks>[{i TrainingOfficer}]: Distributing other tanks will depend on your opponent\'s movement. Reinforce either side as needed. Both land and air scouts you send out should show you how many units your opponent is commiting to either side.',
+        vid = '', bank = '', cue = 'MoreTanks', faction = 'UEF'
     },
 }
 
 MiddleExpansion = {
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_MiddleExpansion_1>[{i TrainingOfficer}]: We will send 1 engie and a tank to the middle to try to secure it. The engi will make 2 mexes then a T1 PD followed by a radar.',
+        text = '<LOC FAF_TUT_OpenPalms_BO_MiddleExpansion_1>[{i TrainingOfficer}]: We will send 1 engie and a couple of tanks to the middle to try to secure it. The engi will make 2 mexes then a T1 PD followed by a radar.',
         vid = '', bank = '', cue = 'MiddleExpansion_1', faction = 'UEF'
     },
         {
@@ -297,7 +324,7 @@ FollowUp = {
         vid = '', bank = '', cue = 'FollowUp_2', faction = 'UEF'
     },
     {
-        text = '<LOC FAF_TUT_OpenPalms_BO_FollowUp_3>[{i TrainingOfficer}]: Once you achieve that you can start upgrading mexes to T2 one by one, go T2 land or get an ACU upgrade like the gun. Good Luck Commander!',
+        text = '<LOC FAF_TUT_OpenPalms_BO_FollowUp_3>[{i TrainingOfficer}]: Once you achieve that you can go T2 land, get an ACU upgrade like the gun or start upgrading mexes to T2 one by one. Good Luck Commander!',
         vid = '', bank = '', cue = 'FollowUp_3', faction = 'UEF'
     },
 }
