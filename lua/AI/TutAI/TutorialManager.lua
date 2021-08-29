@@ -415,7 +415,7 @@ TutorialManager = Class {
     --- Issues engineer to build a group of units, units have to be properly named in the map editor to be built in correct order
     -- Format for naming the units: "number_description". Make sure to have only one number in the name, each unit in the group has to have an unique name.
     -- Example: "1_EngOne_Mex"
-    -- Ff there's a marker with the same name as the name of the unit to be built, the engineer will first move to that marker
+    -- If there's a marker with the same name as the name of the unit to be built, the engineer will first move to that marker
     EngineerBuildGroup = function(self, engineer, group)
         local aiBrain = self.AIBrain
         local tblData = ScenarioUtils.FindUnitGroup(group, Scenario.Armies[self.strArmy].Units)
