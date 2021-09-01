@@ -84,7 +84,7 @@ function MapIntro()
     -- Initial Camera
     ScenarioFramework.Dialogue(OpStrings.MapInfo, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 15)
-    WaitSeconds(1)
+    WaitSeconds(11)
 
     -- Starting Position
     ScenarioFramework.Dialogue(OpStrings.StartPosition, nil, true)
@@ -104,22 +104,22 @@ function MapIntro()
     -- First major expansion
     ScenarioFramework.Dialogue(OpStrings.FirstMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_FirstMainExpansion'), 4)
-    WaitSeconds(9)
+    WaitSeconds(15)
 
     -- 2 Mexes behind the first major expanion
     ScenarioFramework.Dialogue(OpStrings.TwoMexNextToFirstMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexNextToFirstMainExpansion'), 4)
-    WaitSeconds(8)
+    WaitSeconds(10)
 
     -- 3 mexes behind the base
     ScenarioFramework.Dialogue(OpStrings.ThreeMexBehindBase, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_3MexBehindBase'), 7)
-    WaitSeconds(8)
+    WaitSeconds(13)
 
     -- Second major expansion
     ScenarioFramework.Dialogue(OpStrings.SecondMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_SecondMainExpansion'), 7)
-    WaitSeconds(7)
+    WaitSeconds(9)
 
     -- 2 mexes behind 2nd major expansion
     ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondMainExpansion, nil, true)
@@ -129,7 +129,7 @@ function MapIntro()
     -- Middle
     ScenarioFramework.Dialogue(OpStrings.Middle, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_Middle'), 5)
-    WaitSeconds(8)
+    WaitSeconds(11)
 
         -- Enemy starting position
     ScenarioFramework.Dialogue(OpStrings.EnemyBase, nil, true)
@@ -139,7 +139,7 @@ function MapIntro()
     -- Whole map overview
     ScenarioFramework.Dialogue(OpStrings.WholeMap, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_MapInfo'), 7)
-    WaitSeconds(10)
+    WaitSeconds(15)
 
     -- Move to Starting position
     ScenarioFramework.Dialogue(OpStrings.StartBuildOrder, nil, true)
