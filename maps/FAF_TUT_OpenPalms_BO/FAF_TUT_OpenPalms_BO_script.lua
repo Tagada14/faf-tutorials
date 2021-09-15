@@ -111,10 +111,14 @@ function MapIntro()
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_2MexNextToFirstMainExpansion'), 4)
     WaitSeconds(10)
 
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_AboveBase1'), 6)
+
     -- 3 mexes behind the base
     ScenarioFramework.Dialogue(OpStrings.ThreeMexBehindBase, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_3MexBehindBase'), 7)
     WaitSeconds(13)
+
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_AboveBase2'), 6)
 
     -- Second major expansion
     ScenarioFramework.Dialogue(OpStrings.SecondMainExpansion, nil, true)
@@ -125,6 +129,11 @@ function MapIntro()
     ScenarioFramework.Dialogue(OpStrings.TwoMexNextToSecondMainExpansion, nil, true)
     Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_TwoMexNextToSecondMainExpansion'), 4)
     WaitSeconds(3)
+
+    -- Plateau in the corner
+    ScenarioFramework.Dialogue(OpStrings.PlateauCorner, nil, true)
+    Cinematics.CameraMoveToMarker(ScenarioUtils.GetMarker('Cam_PlateauCorner'), 6)
+    WaitSeconds(5)
 
     -- Middle
     ScenarioFramework.Dialogue(OpStrings.Middle, nil, true)
